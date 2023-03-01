@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    padding: 0;
+    margin: 0;
+    font-family: "Signika Negative", sans-serif, Arial;
+    font-weight: 300;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container.grid,
+.container.columns {
+    align-content: stretch;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.letter {
+    text-align: center;
+    color: black;
+    font-size: 10vmax;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 6px;
+}
+
+.container.grid .letter {
+    flex-basis: 50%;
+}
+
+.container.columns .letter {
+    flex-basis: 25%;
+}
+
+.for,
+.gsap {
+    font-size: 5vmax;
+    color: white;
+}
+
+.for {
+    padding: 2px 1.6vmax;
+    font-weight: 300;
+    display: none;
+}
+
+.gsap {
+    padding: 2px 0;
+    font-weight: 600;
+    display: none;
+}
+
+.container.final .for,
+.container.final .gsap {
+    display: block;
+}
+
+.S {
+    background: rgba(0, 188, 212, 0.7);
+}
+
+.H {
+    background: rgba(40, 150, 255, 0.7);
+}
+
+.I {
+    background: rgba(153, 80, 220, 0.7);
+}
+
+.N {
+    background: rgba(137, 225, 90, 0.7);
+}
+
+.O {
+    background: rgba(225, 90, 173, 0.7);
+}
+
+.B {
+    background: rgba(225, 90, 128, 0.7);
+}
+
+.container.plain .letter {
+    background: transparent;
+    color: white;
+    padding: 0;
+}
+
+.logo {
+    position: fixed;
+    width: 60px;
+    bottom: 20px;
+    right: 30px;
+}
